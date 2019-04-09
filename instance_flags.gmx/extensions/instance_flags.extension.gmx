@@ -2,8 +2,8 @@
 <extension>
   <name>instance_flags</name>
   <version>1.0.0</version>
-  <packageID></packageID>
-  <ProductID></ProductID>
+  <packageID>cc.yal.iflags</packageID>
+  <ProductID>7A88596AF9D7720741852E307765F77B</ProductID>
   <date>03/09/17</date>
   <license>Free to use, also for commercial games.</license>
   <description></description>
@@ -25,11 +25,14 @@
   <iosThirdPartyFrameworks/>
   <ConfigOptions>
     <Config name="Default">
-      <CopyToMask>105554172285166</CopyToMask>
+      <CopyToMask>611319914</CopyToMask>
     </Config>
   </ConfigOptions>
   <androidPermissions/>
-  <IncludedResources/>
+  <IncludedResources>
+    <Resource>Included Files\instance_flags.html</Resource>
+    <Resource>Included Files\collision_list_funcs.gmez</Resource>
+  </IncludedResources>
   <files>
     <file>
       <filename>instance_flags.gml</filename>
@@ -229,19 +232,19 @@
           </args>
         </function>
         <function>
-          <name>instance_nearest_flags_num</name>
-          <externalName>instance_nearest_flags_num</externalName>
+          <name>instance_find_nearest_flags_num</name>
+          <externalName>instance_find_nearest_flags_num</externalName>
           <kind>11</kind>
-          <help>instance_nearest_flags_num(x, y, obj, num, flags, value, not, ?out)</help>
+          <help>instance_find_nearest_flags_num(x, y, obj, num, flags, value, ?out)</help>
           <returnType>2</returnType>
           <argCount>-1</argCount>
           <args/>
         </function>
         <function>
-          <name>instance_furthest_flags_num</name>
-          <externalName>instance_furthest_flags_num</externalName>
+          <name>instance_find_furthest_flags_num</name>
+          <externalName>instance_find_furthest_flags_num</externalName>
           <kind>11</kind>
-          <help>instance_furthest_flags_num(x, y, obj, num, flags, value, not, ?out)</help>
+          <help>instance_find_furthest_flags_num(x, y, obj, num, flags, value, ?out)</help>
           <returnType>2</returnType>
           <argCount>-1</argCount>
           <args/>
@@ -360,6 +363,24 @@
           <externalName>instance_position_flags_all</externalName>
           <kind>11</kind>
           <help>instance_position_flags_all(x, y, obj, flags, value, not, ?out)</help>
+          <returnType>2</returnType>
+          <argCount>-1</argCount>
+          <args/>
+        </function>
+        <function>
+          <name>instance_nearest_flags_num</name>
+          <externalName>instance_nearest_flags_num</externalName>
+          <kind>11</kind>
+          <help>instance_nearest_flags_num(x, y, obj, num, flags, value, not, ?out)</help>
+          <returnType>2</returnType>
+          <argCount>-1</argCount>
+          <args/>
+        </function>
+        <function>
+          <name>instance_furthest_flags_num</name>
+          <externalName>instance_furthest_flags_num</externalName>
+          <kind>11</kind>
+          <help>instance_furthest_flags_num(x, y, obj, num, flags, value, not, ?out)</help>
           <returnType>2</returnType>
           <argCount>-1</argCount>
           <args/>
