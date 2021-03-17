@@ -1,10 +1,10 @@
 var f, d;
 // vertical accel:
 if (place_meeting_flags(x, y + 1, obj_solid, IFlags.SolidDown, -1, 0) && yspeed >= 0) {
-    jump = 5;
-} else yspeed += 0.5;
+    jump = 10;
+} else yspeed += 0.25;
 if (--jump > 0 && keyboard_check_pressed(vk_up)) {
-    yspeed = -7;
+    yspeed = -5;
     jump = 0;
 }
 // horizontal movement:
@@ -12,7 +12,7 @@ d = keyboard_check(vk_right) - keyboard_check(vk_left);
 if (d != 0) {
     image_index = (d > 0) * 1;
     if (d > 0) f = IFlags.SolidRight; else f = IFlags.SolidLeft;
-    scr_move(d * 5, 0, obj_solid, f);
+    scr_move(d * 3, 0, obj_solid, f);
 }
 // vertical movement:
 if (yspeed != 0) {

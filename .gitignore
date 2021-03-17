@@ -1,6 +1,8 @@
 /*/#backups/
 /*/Configs/*/
 /*/options/*/
+!/*/options/main/
+!/*/options/windows/
 /Nothing__
 /instance_flags.gmx/help.rtf
 /export/thumb-itch.png

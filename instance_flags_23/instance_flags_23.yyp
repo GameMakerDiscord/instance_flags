@@ -70,9 +70,8 @@
     {"isScaled":false,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [
-    {"CopyToMask":0,"filePath":"datafiles","resourceVersion":"1.0","name":"instance_flags.html","resourceType":"GMIncludedFile",},
-    {"CopyToMask":0,"filePath":"datafiles","resourceVersion":"1.0","name":"instance_flags.dmd","resourceType":"GMIncludedFile",},
-    {"CopyToMask":0,"filePath":"datafiles","resourceVersion":"1.0","name":"collision_list_funcs.gmez","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"instance_flags.dmd","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"instance_flags.html","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.1.542",
