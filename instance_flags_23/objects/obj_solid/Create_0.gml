@@ -1,0 +1,2 @@
+iflags = if_solid;
+

@@ -79,7 +79,7 @@ class IfTools {
 		//
 		tmp.clear();
 		if (alloc) {
-			var arr = NativeArray.create(found);
+			var arr = NativeArray.createEmpty(found);
 			i = 0; while (i < found) {
 				NativeArray.copyset(arr, i, out[i]);
 				i++;

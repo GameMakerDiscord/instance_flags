@@ -1,0 +1,115 @@
+```set template default.html```
+```gmlapi fnames2```
+```set title instance_flags cheat sheet```
+```set og:url https://yal.cc/r/19/instance_flags```
+```set autoapi ext```
+```set mainclass boxtt```
+```set intro
+Instance Flags by [YellowAfterlife](https://yal.cc)!\
+Get the extension on [itch.io](https://yellowafterlife.itch.io/gamemaker-instance-flags) or [GM Marketplace](https://marketplace.yoyogames.com/assets/8113/).\
+This document is also [available online](https://yal.cc/r/19/instance_flags).
+```
+```raw <style>
+.page { max-width: 736px }
+</style>```
+#[General idea](idea) {
+	Historically GameMaker instances only had a single flag ("soild"),
+	which was mutually exclusive with filtering instances by their type/parent,
+	but, with introduction of collision list functions, we can do better,
+	allowing to filter by type AND an arbitrary set of flags.
+	
+	So, for instance, you can check whether your character is standing on a slippery solid block,
+	or whether that block is jump-through,
+	or find the nearest airborne target in a tower defense game,
+	or many other uses.
+	
+	See the demo project for an example!
+}
+#[General structure](args) {
+	```gmlapi
+	Flag
+	A
+	B
+	C
+	```
+	Setting up: Objects that you want to use with `_flags` function must have a variable
+	called `iflags`, holding a set of [bit flags](https://en.wikipedia.org/wiki/Bitwise_operation)
+	or 0 if there aren't any.
+	
+	You declare the bit flags yourself, usually as an enum or a set of macros:
+	```
+	enum Flag { A = 1, B = 2, C = 4 }
+	```
+	On native targets, you can have up to 64 flags.\
+	On HTML5 you can have up to 32.
+	
+	Each of the functions takes 3 arguments, `flags`, `value`, and `not`.
+	
+	The way these work is as following (pseudocode):
+	```
+	var flags = .., value = .., _not = .., matches;
+	value &= flags; // means that you can use -1 to match `flags`
+	if (_not) {
+		matches = (self.iflags & flags) != value;
+	} else {
+		matches = (self.iflags & flags) == value;
+	}
+	```
+	Which means that you can do things like:
+	```
+	// finds an instance with both Flag.A and Flag.B set
+	var q = instance_place_flags(x, y, obj_some, Flag.A|Flag.B, -1, 0);
+	
+	// finds an instance with both Flag.A set and Flag.B not set
+	var q = instance_place_flags(x, y, obj_some, Flag.A|Flag.B, Flag.A, 0);
+	
+	// finds an instance with Flag.A or Flag.B set
+	var q = instance_place_flags(x, y, obj_some, Flag.A|Flag.B, 0, 1);
+	```
+}
+#[instance_flags_ordered]() {
+	Determines whether results returned by instance flags functions should be ordered
+	("ordered" argument in collision_list functions)
+}
+#[instance_number_flags(obj, flags, value, not)->number]() {
+	Returns the number of instances matching a flag query.
+	
+	You can then pick through them using [instance_find_flags] or [instance_find_flags_all].
+}
+#[Single-return](single) {
+	The following act like most GameMaker functions do, returning a single result.
+	#[instance_find_flags(obj, index, flags, value, not)->inst]() {}
+	#[instance_nearest_flags(x, y, obj, flags, value, not)->inst]() {}
+	#[instance_furthest_flags(x, y, obj, flags, value, not)->inst]() {}
+	#[position_meeting_flags(x, y, obj, flags, value, not)->bool]() {}
+	#[place_meeting_flags(x, y, obj, flags, value, not)->bool]() {}
+	#[instance_position_flags(x, y, obj, flags, value, not)->inst]() {}
+	#[instance_place_flags(x, y, obj, flags, value, not)->inst]() {}
+	#[collision_point_flags(x, y, obj, prec, notme, flags, value, not)->inst]() {}
+	#[collision_circle_flags(x, y, rad, obj, prec, notme, flags, value, not)->inst]() {}
+	#[collision_line_flags(x, y, x, y, obj, prec, notme, flags, value, not)->inst]() {}
+	#[collision_rectangle_flags(x, y, x, y, obj, prec, notme, flags, value, not)->inst]() {}
+	#[collision_ellipse_flags(x, y, x, y, obj, prec, notme, flags, value, not)->inst]() {}
+}
+#[Multi-return](multi) {
+	All of the following take an optional `out` argument, which is a ds_list.
+	
+	If `out` is provided, the results are added to it,
+	and the functions return how many they added.
+	
+	If `out` is not provided, the functions create and return an array with results.
+	#[instance_find_flags_all(obj, flags, value, not, ?out)->num||array](){}
+	#[instance_nearest_flags_num(x, y, obj, num, flags, value, not, ?out)->num||array](){
+		Gets up to `num` instances starting from nearest to point.
+	}
+	#[instance_furthest_flags_num(x, y, obj, num, flags, value, not, ?out)->num||array](){
+		Gets up to `num` instances starting from furthest from point.
+	}
+	#[instance_position_flags_all(x, y, obj, flags, value, not, ?out)->num||array](){}
+	#[instance_place_flags_all(x, y, obj, flags, value, not, ?out)->num||array](){}
+	#[collision_point_flags_all(x, y, obj, prec, notme, flags, value, not, ?out)->num||array](){}
+	#[collision_circle_flags_all(x, y, rad, obj, prec, notme, flags, value, not, ?out)->num||array](){}
+	#[collision_line_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)->num||array](){}
+	#[collision_rectangle_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)->num||array](){}
+	#[collision_ellipse_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)->num||array](){}
+}

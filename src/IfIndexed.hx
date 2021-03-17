@@ -45,7 +45,7 @@ class IfIndexed {
 			}
 		}
 		if (alloc) {
-			var arr = NativeArray.create(found);
+			var arr = NativeArray.createEmpty(found);
 			while (--found >= 0) arr[found] = out[found];
 			out.clear();
 			return arr;

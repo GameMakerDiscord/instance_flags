@@ -1,0 +1,2 @@
+iflags = IFlags.SolidRight;
+

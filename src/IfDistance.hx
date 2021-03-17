@@ -77,7 +77,7 @@ class IfDistance {
 			}
 			return found;
 		} else {
-			var arr = NativeArray.create(found);
+			var arr = NativeArray.createEmpty(found);
 			while (i < found) {
 				if (near) {
 					arr[i] = pq.deleteMin();

@@ -1,0 +1,247 @@
+Converting GML script: ${project_dir}\scripts\scr_move\scr_move.gml
+Converted description /// @description  scr_move(dx, dy, obj, flags)/// @param dx
+/// @param  dy
+/// @param  obj
+/// @param  flags
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_point_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_point_flags(x, y, obj, prec, notme, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_point_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_point_flags_all(x, y, obj, prec, notme, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_circle_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_circle_flags(x, y, rad, obj, prec, notme, flags, value, not)/// @param x
+/// @param  y
+/// @param  rad
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_circle_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_circle_flags_all(x, y, rad, obj, prec, notme, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  rad
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_rectangle_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_rectangle_flags(x, y, x, y, obj, prec, notme, flags, value, not)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_rectangle_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_rectangle_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_line_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_line_flags(x, y, x, y, obj, prec, notme, flags, value, not)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_line_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_line_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_ellipse_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_ellipse_flags(x, y, x, y, obj, prec, notme, flags, value, not)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'collision_ellipse_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  collision_ellipse_flags_all(x, y, x, y, obj, prec, notme, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  x
+/// @param  y
+/// @param  obj
+/// @param  prec
+/// @param  notme
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_nearest_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_furthest_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_nearest_flags_num(x, y, obj, num, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  num
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_furthest_flags_num(x, y, obj, num, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  num
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_number_flags(obj, flags, value)/// @param obj
+/// @param  flags
+/// @param  value
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_find_flags(obj, index, flags, value)/// @param obj
+/// @param  index
+/// @param  flags
+/// @param  value
+
+Converting GML script: instance_flags.gml
+Converted description /// @description  instance_find_flags_all(obj, flags, value, ?out)/// @param obj
+/// @param  flags
+/// @param  value
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_place_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  place_meeting_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_place_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  instance_place_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_place_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  instance_place_flags_all(x, y, obj, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_position_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  position_meeting_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_position_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  instance_position_flags(x, y, obj, flags, value, not)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+
+Converting GML script: instance_flags.gml
+Error: variable 'instance_position_list' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  instance_position_flags_all(x, y, obj, flags, value, not, ?out)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  flags
+/// @param  value
+/// @param  not
+/// @param  ?out
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 30
